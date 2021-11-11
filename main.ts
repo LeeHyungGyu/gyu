@@ -1,14 +1,29 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Heart)
-    soundExpression.giggle.playUntilDone()
+input.onGesture(Gesture.ScreenUp, function () {
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # . # . #
+        . # # # .
+        . . # . .
+        `)
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Square)
-    soundExpression.twinkle.playUntilDone()
+input.onGesture(Gesture.LogoDown, function () {
+    basic.showLeds(`
+        . . # . .
+        . . # . .
+        # . # . #
+        . # # # .
+        . . # . .
+        `)
 })
-input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.SmallHeart)
-    soundExpression.soaring.playUntilDone()
+input.onGesture(Gesture.LogoUp, function () {
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        `)
 })
 basic.forever(function () {
 	

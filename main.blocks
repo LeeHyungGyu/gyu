@@ -1,1 +1,19 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="VH*x62^ujP:hl(Jo+ih{" x="0" y="0"/><block type="device_button_event" id="Hg+nZ;`8cAM[vqtyi^!r" x="179" y="2"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="basic_show_icon" id="$u9r+CnF4[+s0H@{/u_?"><field name="i">IconNames.Heart</field><next><block type="SoundExpression_playUntilDone" id="YII968$[pHEdRbbB}-Vp"><field name="this">soundExpression.giggle</field></block></next></block></statement></block><block type="device_forever" id="yK0n;$8m*!Fe%WO*6G7w" x="-1" y="119"/><block type="device_button_event" id="[ukMzoCN0{/@li0ya/LT" x="178" y="221"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="basic_show_icon" id="Z0}P?][3HdGhQ8nmnbj@"><field name="i">IconNames.SmallHeart</field><next><block type="SoundExpression_playUntilDone" id="(3GsCO/zSK?#N8.~q2kF"><field name="this">soundExpression.soaring</field></block></next></block></statement></block><block type="device_button_event" id="QDLn}@cMHdA~^w:`b#a*" x="188" y="436"><field name="NAME">Button.AB</field><statement name="HANDLER"><block type="basic_show_icon" id="Non8zVV{+r#+Q7@_W!Pq"><field name="i">IconNames.Square</field><next><block type="SoundExpression_playUntilDone" id="q%Cn9#A.:+R$*3Ij_t+v"><field name="this">soundExpression.twinkle</field></block></next></block></statement></block></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="VH*x62^ujP:hl(Jo+ih{" x="20" y="20"/><block type="device_gesture_event" id="mMqCI=`FH%:PVMmv.Hun" x="223" y="25"><field name="NAME">Gesture.LogoUp</field><statement name="HANDLER"><block type="device_show_leds" id="_#ktwLc(H*m$]*ir+FP7"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . . # . . 
+        . . # . .
+        `</field></block></statement></block><block type="device_gesture_event" id="v?3O,EnL|S?c|1cIL8Z0" x="584" y="30"><field name="NAME">Gesture.LogoDown</field><statement name="HANDLER"><block type="device_show_leds" id="^;;Aj4a;{2)dhrE8l03%"><field name="LEDS">`
+        . . # . . 
+        . . # . . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></statement></block><block type="device_gesture_event" id="EBX/jpyF*?qBLj^GgPLt" x="911" y="31"><field name="NAME">Gesture.ScreenUp</field><statement name="HANDLER"><block type="device_show_leds" id="t8tIH,(X1}9I7s`#F/+h"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # . # . # 
+        . # # # . 
+        . . # . .
+        `</field></block></statement></block><block type="device_forever" id="yK0n;$8m*!Fe%WO*6G7w" x="18" y="147"/></xml>
