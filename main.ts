@@ -1,29 +1,17 @@
-input.onGesture(Gesture.ScreenUp, function () {
-    basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . # # # .
-        . . # . .
-        `)
-})
-input.onGesture(Gesture.LogoDown, function () {
-    basic.showLeds(`
-        . . # . .
-        . . # . .
-        # . # . #
-        . # # # .
-        . . # . .
-        `)
-})
-input.onGesture(Gesture.LogoUp, function () {
-    basic.showLeds(`
-        . . # . .
-        . # # # .
-        # . # . #
-        . . # . .
-        . . # . .
-        `)
+let LightsOn = false
+input.onSound(DetectedSound.Loud, function () {
+    LightsOn = !(LightsOn)
+    if (LightsOn) {
+        basic.showLeds(`
+            # # # . .
+            # . . . .
+            # . # . #
+            . . . . #
+            . . # # #
+            `)
+    } else {
+        basic.clearScreen()
+    }
 })
 basic.forever(function () {
 	
